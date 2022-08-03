@@ -1,0 +1,21 @@
+# many other libraries are included in the tf docker container
+Pillow
+scikit-image
+scikit-learn
+tqdm
+scipy
+tensorflow_addons
+ipython
+jupyter
+ipykernel
+ipython-genutils
+opencv-python
+cython
+pycocotools
+tensorboard-plugin-profile
+tensorflow_hub
+ml_collections
+click
+omegaconf
+git+https://github.com/rossettisimone/vit-keras.git
+git+https://github.com/lucasb-eyer/pydensecrf.git 

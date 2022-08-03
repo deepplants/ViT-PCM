@@ -1,0 +1,71 @@
+EXP:
+    ID: coco14
+    OUTPUT_DIR: data
+    LOGS_DIR: logs
+    WEIGHTS_DIR: weights
+    NUM_GPUS: 0,1,2,3
+
+DATASET:
+    NAME: coco14
+    ROOT: ./datasets/coco14/tfrecord
+    LABELS: ./datasets/coco14/labels.txt
+    NUM_CLASSES: 81
+    IGNORE_LABEL: 255
+    SPLIT:
+        TRAIN: train
+        VAL: val
+        TEST: val
+    AUGMENTATIONS:
+        PROB_ROT90: 0.5
+        PROB_FLIP_LR: 0.5
+        PROB_FLIP_UD: 0.5
+        PROB_COLOR_SAT: 0.5
+        PROB_COLOR_BRIGHT: 0.5
+        PROB_COLOR_CONT: 0.5
+        PROB_COLOR_HUE: 0.5
+        PROB_COLOR_GRAY: 0.0
+        PROB_CROP: 0.0
+
+DATALOADER:
+    NUM_WORKERS: 24
+
+IMAGE:
+    SIZE:
+        TRAIN: 384
+        VAL: 384
+        TEST: 960
+        CROP: 128
+        SCALE: 192
+
+MODEL:
+    NAME: ViT_B16
+    LSTM: HV_BiLSTM
+    LOC: PCM
+    INIT_MODEL: # None
+    PATCH_SIZE: 16
+    HIDDEN_SIZE: 192
+    NUM_BLOCK_UNFREEZE: 5
+
+SOLVER:
+    BATCH_SIZE:
+        TRAIN: 16
+        VAL: 20
+        TEST: 1
+    LR_WARMUP: 1.0e-3
+    LR: 1.0e-4
+    EPOCHS_WARMUP: 1
+    EPOCHS: 80
+    DROPOUT: 0.2
+    DROP_PATCH: 0.2
+    OPTIMIZER: Adam
+    LOSS_MCE: True
+    LOSS_ET: True
+    LOSS_REG: True
+
+CRF:
+    ITER_MAX: 10
+    POS_W: 3
+    POS_XY_STD: 1
+    BI_W: 4
+    BI_XY_STD: 67
+    BI_RGB_STD: 3
