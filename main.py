@@ -62,7 +62,8 @@ def train(config_path: str, cuda: bool = True):
     from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
     from model import get_model, ConfusionMatrixCallback
     GPUS = ["GPU:"+str(i) for i in range(len(GPUs.split(',')))]
-    strategy = tf.distribute.MirroredStrategy(GPUS)
+    strategy = tf.distribute.MirroredStrategy(devices=GPUS, 
+        cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
     REPLICAS = strategy.num_replicas_in_sync
     logdir, filepath = create_folders(CONFIG)
     writer = create_file_writer(logdir)
@@ -131,7 +132,8 @@ def eval(config_path, model_path, cuda):
     from tensorflow.keras.optimizers import Adam
     from dataloader import DatasetVITPCMDistributed
     GPUS = ["GPU:"+str(i) for i in range(len(GPUs.split(',')))]
-    strategy = tf.distribute.MirroredStrategy(GPUS)
+    strategy = tf.distribute.MirroredStrategy(devices=GPUS, 
+        cross_device_ops=tf.distribute.HierarchicalCopyAllReduce())
     REPLICAS = strategy.num_replicas_in_sync
     CONFIG.MODEL.INIT_MODEL = model_path    
     with strategy.scope():
