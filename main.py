@@ -7,6 +7,7 @@ def set_env(gpus: str = '-1'):
     os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"]=gpus
     os.environ["TF_GPU_THREAD_MODE"]="gpu_private"
+    os.environ["TF_FORCE_GPU_ALLOW_GROWTH"]='true'
     import tensorflow as tf
     print(f'CUDA AVAILABLE: {tf.test.is_gpu_available(cuda_only=True)}')
     print(f'TENSORFLOW VERSION: {tf.__version__}')
