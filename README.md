@@ -4,15 +4,17 @@
 
 Official implementation of:
 
-*Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation, Simone Rossetti, Damiano Zappia, Marta Sanzari, Marco Schaerf and Fiora Pirri, ECCV 2022* [[Paper]]()
+*Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation, Simone Rossetti, Damiano Zappia, Marta Sanzari, Marco Schaerf and Fiora Pirri, ECCV 2022* <!-- [[Paper]]() -->
 ## Citation
+**IMPORTANT**: paper will be made publicly available soon by ECCV 2022 proceedings of Springer.
+
 If you find the code useful, please consider citing our paper using the following BibTeX entry.
 ```
 @inproceedings{ros2022max,
   title={Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation},
   author={Rossetti, Simone and Zappia, Damiano and Sanzari, Marta and Schaerf, Marco and Pirri, Fiora},
   booktitle={ECCV},
-  pages={--},
+  pages={?},
   year={2022}
 }
 ```
