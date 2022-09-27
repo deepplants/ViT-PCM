@@ -13,8 +13,8 @@ If you find the code useful, please consider citing our paper using the followin
 @inproceedings{ros2022max,
   title={Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation},
   author={Rossetti, Simone and Zappia, Damiano and Sanzari, Marta and Schaerf, Marco and Pirri, Fiora},
-  booktitle={ECCV},
-  pages={?},
+  booktitle={Proceedings of the European conference on computer vision (ECCV)},
+  pages={?-?},
   year={2022}
 }
 ```
