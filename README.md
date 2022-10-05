@@ -75,6 +75,8 @@ python main.py test -c model_config_yaml -m model_path_h5 --cuda --crf
 | ViT-PCM/B     | VOC2012 | 71.79 | 69.23 | [[Weights]](https://drive.google.com/file/d/1tFOkeJcl1v4Hkf4fE7jVpS3DtDP7rdtc/view?usp=sharing) |
 | ViT-PCM/B     | COCO2014 | - | 45.03 | [[Weights]](https://drive.google.com/file/d/1-ItfAJKtEJympPBAYVaYkIDp7cm-Y-VV/view?usp=sharing) |
 
+![Baseline pseudo masks](images/results.gif)
+
 ## Open project in VSCode (optional)
 First make sure [Setup](#setup) is completed, then:
 1. Install latest [VSCode](https://code.visualstudio.com/download),
