@@ -1,4 +1,5 @@
-# Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation 
+# Weakly supervised semantic segmentation with ViT-PCM
+[[`eccv`](https://link.springer.com/chapter/10.1007/978-3-031-20056-4_26)] [[`ecva`](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136900442.pdf)] [[`arXiv`](https://arxiv.org/abs/2210.17400)] [[`poster`](https://drive.google.com/file/d/1VrA9T2g8HdYxbVKMP0DbL42Fk8gyRwGu/view?usp=share_link)] [[`video`](https://drive.google.com/file/d/1wcam_nS2Tgs_R_wKyYcbHBxW5Cy_DdEI/view?usp=share_link)]
 
 ![Baseline pseudo masks](images/bpm.png)
 
