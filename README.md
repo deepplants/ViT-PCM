@@ -1,4 +1,10 @@
 # Weakly supervised semantic segmentation with ViT-PCM
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/max-pooling-with-vision-transformers/weakly-supervised-semantic-segmentation-on-4)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-4?p=max-pooling-with-vision-transformers)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/max-pooling-with-vision-transformers/weakly-supervised-semantic-segmentation-on-14)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-14?p=max-pooling-with-vision-transformers)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/max-pooling-with-vision-transformers/weakly-supervised-semantic-segmentation-on-1)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on-1?p=max-pooling-with-vision-transformers)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/max-pooling-with-vision-transformers/weakly-supervised-semantic-segmentation-on)](https://paperswithcode.com/sota/weakly-supervised-semantic-segmentation-on?p=max-pooling-with-vision-transformers)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/max-pooling-with-vision-transformers/weakly-supervised-object-segmentation-on)](https://paperswithcode.com/sota/weakly-supervised-object-segmentation-on?p=max-pooling-with-vision-transformers)
+
 Official implementation of:
 
 *Max Pooling with Vision Transformers reconciles class and shape in weakly supervised semantic segmentation, Simone Rossetti, Damiano Zappia, Marta Sanzari, Marco Schaerf and Fiora Pirri, ECCV 2022* <!-- [[Paper]]() -->
